@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="heading">
+<h1>Calculator Program in JavaScript</h1>
+</div>
+
+
+
+<div class="calculatoroutline">
+	<input type="text" id="output-screen" placeholder="0" class="inputValue"><br>
+	<button onclick="number1()" value = "1" class="buttonOn">1</button>
+	<button onclick="number2()" value = "2" class="buttonOn">2</button>
+	<button onclick="number3()" value = "3" class="buttonOn">3</button>
+	<button onclick="operatoradd()" value = "+" class="buttonOn">+</button><br>
+	<button onclick="number4()" value = "4" class="buttonOn">4</button>
+	<button onclick="number5()" value = "5" class="buttonOn">5</button>
+	<button onclick="number6()" value = "6" class="buttonOn">6</button>
+	<button onclick="operatorsub()" value = "-" class="buttonOn">-</button><br>
+	<button onclick="number7()" value = "7" class="buttonOn">7</button>
+	<button onclick="number8()" value = "8" class="buttonOn">8</button>
+	<button onclick="number9()" value = "9" class="buttonOn">9</button>
+	<button onclick="operatormultiply()" value = "*" class="buttonOn">*</button><br>
+	<button onclick="allClear()"  class="buttonText">clr</button>
+	<button onclick="number0()" value = "0" class="buttonOn">0</button>
+	<button onclick="operatordivide()" value = "/" class="buttonOn">/</button>
+	<button onclick="Calcuate()" value = "=" class="buttonOn">=</button>	
+</div>
+<script>
+  var noArrays = [  ];
+  function number1() {
+  document.getElementById("output-screen").value += "1";
+}
+function number2() {
+  document.getElementById("output-screen").value += "2";
+}
+function number3() {
+  document.getElementById("output-screen").value += "3";
+}
+function number4() {
+  document.getElementById("output-screen").value += "4";
+}
+function number5() {
+  document.getElementById("output-screen").value += "5";
+}
+function number6() {
+  document.getElementById("output-screen").value += "6";
+}
+function number7() {
+  document.getElementById("output-screen").value += "7";
+}
+function number8() {
+   document.getElementById("output-screen").value += "8";
+}
+function number9() {
+  document.getElementById("output-screen").value += "9";
+}
+function number0() {
+  document.getElementById("output-screen").value += "0";
+}
+function operatoradd(){
+  document.getElementById("output-screen").value += "+";
+}
+function operatorsub(){
+  document.getElementById("output-screen").value += "-";
+}
+function operatormultiply(){
+  document.getElementById("output-screen").value += "*";
+}
+function operatordivide(){
+  document.getElementById("output-screen").value += "/";
+}
+function allClear(){
+  document.getElementById("output-screen").value = " ";
+}
+function Calcuate(){
+  var outputScreen = document.getElementById('output-screen')
+  outputScreen.value = eval(outputScreen.value);
+}
+</script>
+</body>
+</html> 
+
+ 
+
+
+
+
+
+
